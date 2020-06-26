@@ -1,6 +1,12 @@
-#include <iostream>
+#include <gtkmm-3.0/gtkmm.h>
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+int main(int argc, char* argv[]) {
+    auto app =
+            Gtk::Application::create(argc, argv,
+                                     "com.tsijercic1.cnc.curvecreator");
+
+    Gtk::Window window;
+    window.set_default_size(200, 200);
+
+    return app->run(window);
 }
