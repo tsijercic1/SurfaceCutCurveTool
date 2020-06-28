@@ -1,7 +1,10 @@
 project(SurfaceCutCurve)
 
+set(CMAKE_CXX_STANDARD 17)
+
 cmake_minimum_required(VERSION 3.16)
 find_package(PkgConfig)
+
 
 pkg_check_modules(GTKMM gtkmm-3.0) # look into FindPkgConfig.cmake,
 # it contains documentation

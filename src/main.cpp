@@ -1,5 +1,12 @@
 #include <gtkmm-3.0/gtkmm.h>
 #include <iostream>
+#include <filesystem>
+
+namespace fs = std::filesystem;
+
+void on_button_clicked(){
+    std::cout << fs::current_path().string() << std::endl;
+}
 
 int main(int argc, char *argv[]) {
     auto app =
@@ -24,8 +31,14 @@ int main(int argc, char *argv[]) {
 
     Gtk::Window *windowPtr;
     builder->get_widget("Root", windowPtr);
+    Gtk::Button *buttonPtr;
+    builder->get_widget("button", buttonPtr);
+    buttonPtr->signal_clicked().connect(sigc::ptr_fun(&on_button_clicked));
     int result = app->run(*windowPtr);
     delete windowPtr;
+    delete buttonPtr;
 
     return result;
 }
+
+
