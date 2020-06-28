@@ -4,8 +4,8 @@ link_directories(
 include_directories(
         ${GTKMM_INCLUDE_DIRS}  )
 
-add_executable(${PROJECT_NAME}
+add_executable(SurfaceCutCurve
         main.cpp)
 
-target_link_libraries(${PROJECT_NAME}
+target_link_libraries(SurfaceCutCurve
         ${GTKMM_LIBRARIES}  )

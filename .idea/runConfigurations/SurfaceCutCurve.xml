@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SurfaceCutCurve" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" WORKING_DIR="file://$FileDir$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SurfaceCutCurve" TARGET_NAME="SurfaceCutCurve" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SurfaceCutCurve" RUN_TARGET_NAME="SurfaceCutCurve">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
